@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio | Nurtay Nursultan</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="https://github.com/Idontusethisanyways" target="_blank">Мой Github</a>
+        </div>
+        <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#feedback">Связаться</a></li>
+        </ul>
+        <button id="moveButton" onclick="moveToSection()">Контакты</button>
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Привет, меня зовут Нурсултан</h5>
+            <h3>Я создаю <span>анализирую</span> и <span>визуализирую</span> данные.</h3>
+            <p>
+                Добро пожаловать! Это мое портфолио, насладитесь своим временем здесь!
+            </p>
+            <button onclick="moveToSection()">Связаться</button>
+        </div>
+        <div class="right">
+            <img src="assets/header-img.png">
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h5>Навыки</h5>
+        <h3>Моя экспертиза</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-analyse'></i></div>
+                <h4>Анализ данных</h4>
+                <p>
+                    Изучяю данные для раскрытия их историй, руководствуясь любопытством.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxs-data'></i></div>
+                <h4>Сбор и чистка данных</h4>
+                <p>
+                    Скрупулезная работа по превращению беспорядочных данных в содержательные сведения.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-happy-heart-eyes' ></i></div>
+                <h4>Визуализация данных</h4>
+                <p>
+                    Создаю визуальные повествований на основе данных, выявление скрытых метрик.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-python'></i></div>
+                <h4>Python</h4>
+                <p>
+                    Мои ворота в магию науки о данных, дающие возможность исследовать и внедрять инновации.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h5>Квалификация</h5>
+        <h3>Мои сертификаты с проиденных курсов</h3>
+        <div class="skill-items">
+            <div class="item">
+                <a href="assets/Design Principles.jpg" target="_blank">
+                    <img src="assets/Design Principles.jpg" alt="Design Principles">
+                </a>
+            </div>
+            <div class="item">
+                <a href="assets/Excel Basics.jpg" target="_blank">
+                    <img src="assets/Excel Basics.jpg" alt="Excel Basics">
+                </a>
+            </div>
+            <div class="item">
+                <a href="assets/Fundamentals of Viz with honors.jpg" target="_blank">
+                    <img src="assets/Fundamentals of Viz with honors.jpg" alt="Fundamentals of Viz with honors">
+                </a>
+            </div>
+            <div class="item">
+                <a href="assets/SQL for Data Science.jpg" target="_blank">
+                    <img src="assets/SQL for Data Science.jpg" alt="SQL for Data Science">
+                </a>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="assets/about-img.png">
+        </div>
+        <div class="right">
+            <h5>Обо мне</h5>
+            <h3>Это я</h3>
+            <p><br>
+                Привет! Меня зовут Нурсултан, являюсь студентом 2-го курса МУИТ!<br><br>
+                Как страстный новичок в области анализа данных, я стремлюсь исследовать сложные закономерности в данных, используя их для принятия эффективных решений и инноваций.
+            </p>
+            <p><br><br>
+                Будучи начинающим энтузиастом Python, я с удовольствием использую его универсальные возможности для работы с данными, от манипулирования данными до машинного обучения, движимый стремлением к раскрытию действенных идей и внедрению инноваций.
+            </p>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h5>Недавние работы</h5>
+                <h3>Мое портфолио</h3>
+            </div>
+        </div>
+
+        <div class="portfo-items">
+            <div class="item">
+                <img src="assets/tableaucovid.png">
+                <div class="info">
+                    <h4>Визуализация данных о Covid-19</h4>
+                    <p>
+                        Визуализация данных о коронавирусе в Центральной Азий и по миру с Tableau.
+                    </p>
+                    <a href="https://github.com/Idontusethisanyways/COVID19-sql-data-extraction-and-visualization-with-Tableau/tree/main">Ссылка <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/movies.png">
+                <div class="info">
+                    <h4>Корреляция валового дохода от фильмов</h4>
+                    <p>
+                        Выяснение главных показателей коррелирующих с валовыми доходами фильмов (Pandas, Seaborn, NumPy).
+                    </p>
+                    <a href="https://github.com/Idontusethisanyways/movie-gross-earnings-correlation">Ссылка <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Снимок экрана 2024-04-11 050040.png">
+                <div class="info">
+                    <h4>Анализ продаж</h4>
+                    <p>
+                        Выявление главных метрик по продажам (Pandas, Matplotlib, NumPy).
+                    </p>
+                    <a href="https://github.com/Idontusethisanyways/Pandas-Matplotlib-NumPy-Practice-Sales-Analysis">Ссылка <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfo-items">
+            <div class="item">
+                <img src="assets/nashville housing.png">
+                <div class="info">
+                    <h4>Чистка данных</h4>
+                    <p>
+                        Чистка данных о жилье в Нэшвиле на MS SQL.
+                    </p>
+                    <a href="https://github.com/Idontusethisanyways/SQL-Data-Cleaning-Nashville-Housing-Dataset">Ссылка <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Снимок экрана 2024-04-05 233326.png">
+                <div class="info">
+                    <h4>Tableau Public</h4>
+                    <p>
+                        Визуализаций сделанные в Tableau для final projects на Coursera.
+                    </p>
+                    <a href="https://public.tableau.com/app/profile/nursultan.nurtay/vizzes">Ссылка <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/wikiscrap.png">
+                <div class="info">
+                    <h4>Скраппинг википедий</h4>
+                    <p>
+                        Скраппинг таблицы с топ миллиардерами с википедий в Excel/csv (Beautifulsoup, Pandas, Python).
+                    </p>
+                    <a href="https://github.com/Idontusethisanyways/wikipedia-top-billionaires-web-scrapping">Ссылка <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="feedback" id="feedback">
+        <h5>Связаться</h5>
+        <h3>Контакты</h3><br>
+        <div class="container">
+            <div>
+              <ul>
+                <li><a href="https://github.com/Idontusethisanyways"><i class='bx bxl-github' ></i><p>GitHub</p></a></li>
+                <li><a href="https://t.me/@beytarap"><i class='bx bxl-telegram' ></i><p>Telegram</p></a></li>
+                <li><a href="https://www.behance.net/scndack"><i class='bx bxl-behance'></i><p>Behance</p></a></li>
+                <li><a href="mailto:nursultan.nurtay.contact@gmail.com"><i class='bx bxl-gmail' ></i><p>Gmail</p></a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <style>
+            /* Style the container/contact section */
+            .feedback {
+              background-color: #161616;
+              color: white;
+              padding: 110px 85px;
+              padding-top: 0px;
+              padding-bottom: 50px;
+            }
+            .container {
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              background-color: #161616;
+              padding: 20px;
+              padding-top: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+            }
+            .container .i{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #1A1A1A;
+              width: 10px;
+              height: 10px;
+              border-radius: 10px;
+              margin-bottom: 22px;
+              box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+            }
+
+            .container li{
+              font-size: 20px;
+              color: white;
+            }
+            .container li{
+              color: #FF005C;
+            }
+            /* Style the links */
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+            }
+          
+            li {
+              margin: 10px 50px;
+              display: inline;
+            }
+          
+            a {
+              text-decoration: none;
+              color: #ffffff;
+              font-weight: bold;
+            }
+
+            p{
+                display: inline;
+                margin: 10px 5px;
+            }
+          </style>
+          
+
+    <footer>
+        <div class="separator2"></div>
+        <div class="top">
+            <div class="logo">
+                <a href="https://github.com/Idontusethisanyways">Nurtay Nursultan</a>
+            </div>
+            <p>
+                Made With ❤️ By Nursultan Nurtay
+            </p>
+            <!--<ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>!-->
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <!--<div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Setting</a>
+            </div>!-->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
